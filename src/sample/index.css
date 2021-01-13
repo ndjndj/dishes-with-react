@@ -13,4 +13,17 @@ header h1 {
     border: 1px solid #CCCCCC;
     border-radius: 15px;
     margin: 1%;
+    display: flex;
+}
+
+.img {
+    width: 30%;
+    border: 1px solid #AAFFAA;
+    border-radius: 15px;
+}
+
+.desc {
+    width: 70%;
+    border: 1px solid #FFAAFF;
+    border-radius: 15px;
 }
