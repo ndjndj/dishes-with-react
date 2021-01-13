@@ -57,11 +57,19 @@ header h1 {
     display: flex;
 }
 
-.menu .btn {
-    width: 14%;
-    margin: 2%;
+.btn {
     border: 1px solid #CFCFCF;
     background-color: #CFCFCF;
     border-radius: 30px;
     text-align: center;
+}
+
+.menu .btn {
+    width: 14%;
+    margin: 2%;
+
+}
+
+.btn {
+
 }
