@@ -27,3 +27,22 @@ header h1 {
     border: 1px solid #FFAAFF;
     border-radius: 15px;
 }
+
+.title {
+    border: 1px solid #FF00FF;
+    border-radius: 15px;
+}
+
+.under {
+    display: flex;
+}
+
+.category {
+    width: 50%;
+    border: 1px solid #00FFFF;
+}
+
+.date {
+    width: 50%;
+    border: 1px solid #FFFF00;
+}
