@@ -52,7 +52,16 @@ header h1 {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #4499CC;
+    background-color: #b6d8ee;
     z-index: 999;
+    display: flex;
 }
 
+.menu .btn {
+    width: 14%;
+    margin: 2%;
+    border: 1px solid #CFCFCF;
+    background-color: #CFCFCF;
+    border-radius: 30px;
+    text-align: center;
+}
