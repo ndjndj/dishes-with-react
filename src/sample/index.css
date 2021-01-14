@@ -85,3 +85,22 @@ header h1 {
     margin: 2%;
     padding: 2%;
 }
+
+.material {
+    display: flex;
+}
+
+.material-title {
+    width: 14%;
+    margin-right: 2%;
+}
+
+.margin-amount {
+    width: 6%;
+    margin: 2%;
+}
+
+.margin-unit {
+    width: 6%;
+    margin: 2%;
+}
