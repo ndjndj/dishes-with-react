@@ -75,6 +75,10 @@ header h1 {
     margin: 4% 43% 4% 43%;
 }
 
+main {
+    width: 100%;
+}
+
 .materials .btn {
     width: 14%;
     margin: 4% 43% 4% 43%;
@@ -82,25 +86,35 @@ header h1 {
 
 .materials {
     border: 1px solid #C1C1C1;
+    width: 96%;
     margin: 2%;
     padding: 2%;
 }
 
 .material {
     display: flex;
+    width: 6rem;
 }
 
 .material-title {
-    width: 14%;
+    width: 1.4rem;
     margin-right: 2%;
 }
 
 .margin-amount {
-    width: 6%;
+    width: 1rem;
     margin: 2%;
 }
 
 .margin-unit {
-    width: 6%;
+    width: 1rem;
     margin: 2%;
+}
+
+
+@media screen and (min-width: 481px) {
+	/* 481px以上に適用されるCSS（タブレット用） */
+}
+@media screen and (min-width: 960px) {
+	/* 960px以上に適用されるCSS（PC用） */
 }
