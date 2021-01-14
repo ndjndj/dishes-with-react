@@ -75,7 +75,12 @@ header h1 {
     margin: 4% 43% 4% 43%;
 }
 
-.material .btn {
+.materials .btn {
     width: 14%;
     margin: 4% 43% 4% 43%;
+}
+
+.materials {
+    border: 1px solid #C1C1C1;
+    margin: 2%;
 }
