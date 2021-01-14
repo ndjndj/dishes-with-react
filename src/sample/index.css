@@ -76,5 +76,6 @@ header h1 {
 }
 
 .material .btn {
-
+    width: 14%;
+    margin: 4% 43% 4% 43%;
 }
