@@ -123,6 +123,13 @@ main {
     border: 1px solid #CCCCCC;
 }
 
+.name {
+    margin: 2% 20% 2% 20%;
+    width: 60%;
+    border-bottom: 1px solid #CCCCCC;
+    text-align: center;
+}
+
 @media screen and (min-width: 481px) {
 	/* 481px以上に適用されるCSS（タブレット用） */
 }
