@@ -116,6 +116,13 @@ main {
     margin-left: 80%;
 }
 
+.thumb {
+    margin: 2% 20% 2% 20%;
+    width: 60%;
+    height: 200px;
+    border: 1px solid #CCCCCC;
+}
+
 @media screen and (min-width: 481px) {
 	/* 481px以上に適用されるCSS（タブレット用） */
 }
