@@ -111,6 +111,9 @@ main {
     margin: 2%;
 }
 
+.btn.edit {
+    width: 20%;
+}
 
 @media screen and (min-width: 481px) {
 	/* 481px以上に適用されるCSS（タブレット用） */
