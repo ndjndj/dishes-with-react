@@ -2,6 +2,18 @@ import React from 'react';
 import RecipeStep from '../components/recipe-step'
 import Button from 'button';
 class RecipeTable extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            titles: [
+                { title: 'Step1' },
+                { title: 'Step2' },
+                { title: 'Step3' },
+                { title: 'Step4' },
+                { title: 'Step5' }
+            ]
+        };
+    }
     render() {
         return (
             <React.Fragment>
