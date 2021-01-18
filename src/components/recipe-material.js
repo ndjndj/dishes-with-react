@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Button from '../components/button';
 class RecipeMaterial extends React.Component {
     render() {
         return(
@@ -10,7 +10,7 @@ class RecipeMaterial extends React.Component {
                     <div className="material-amount"><input type="number"/></div>
                     <div className="material-unit"><input type="text" /></div>
                 </div>
-                <div className="btn">+</div>
+                <Button desc="+" />
             </div>
         );
     }
