@@ -4,7 +4,7 @@ class RecipeStep extends React.Component {
     render() {
         return (
             <div className="step">
-                <h2>{this.props.title}</h2>
+                <div className="material-unit"><input type="text" /></div>
                 <div className="step-desc">
                     <textarea>
                         samplesamplesamplesamplesamplesamplesamplesample
