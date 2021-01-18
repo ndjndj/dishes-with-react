@@ -6,7 +6,6 @@ class Header extends React.Component {
             <header>
                 <h1>17-6-dishes</h1>
             </header>
-
         );
     }
 }
