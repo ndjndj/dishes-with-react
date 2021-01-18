@@ -4,13 +4,13 @@ class RecipeStep extends React.Component {
     render() {
         return (
             <div className="step">
-                <h2>Step1</h2>
+                <h2>{this.props.title}</h2>
                 <div className="step-desc">
-                    <p>
+                    <textarea>
                         samplesamplesamplesamplesamplesamplesamplesample
                         samplesamplesamplesamplesamplesamplesamplesample
                         samplesamplesamplesamplesamplesamplesamplesample
-                    </p>
+                    </textarea>
                 </div>
             </div>
         );
