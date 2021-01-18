@@ -9,8 +9,21 @@ import RecipeStep from '../components/recipe-step';
 
 class Recipe extends React.Component {
     render() {
+        return (
+            <React.Fragment>
+                <Head title="recipe"/>
+                <Body>
+                    <Header />
+                    <main>
+                        <RecipeMaterial />
+                        <RecipeStep />
+                        <Button desc="+"/>
+                    </main>
+                    <Menu />
+                </Body>
+            </React.Fragment>
 
-        return ();
+        );
     }
 }
 
