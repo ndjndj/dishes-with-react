@@ -5,7 +5,7 @@ import Menu from '../components/menu';
 import Button from '../components/button';
 import Header from '../components/header';
 import RecipeMaterial from '../components/recipe-material';
-import RecipeStep from '../components/recipe-step';
+import RecipeTable from '../components/recipe-table';
 
 class Recipe extends React.Component {
     render() {
@@ -16,8 +16,7 @@ class Recipe extends React.Component {
                     <Header />
                     <main>
                         <RecipeMaterial />
-                        <RecipeStep />
-                        <Button desc="+"/>
+                        <RecipeTable />
                     </main>
                     <Menu />
                 </Body>
