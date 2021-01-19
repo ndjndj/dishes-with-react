@@ -14,7 +14,7 @@ class RecipeTable extends React.Component {
                 <div className="recipe-step-table">
                     {this.state.steps.map(
                         (step, i) => {
-                            return <RecipeStep key="i" />
+                            return <RecipeStep key={i} />
                         })
                     }
                 </div>
