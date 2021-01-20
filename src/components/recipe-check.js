@@ -3,7 +3,7 @@ import Head from '../components/head';
 import Body from '../components/body';
 import Menu from '../components/menu';
 import Header from '../components/header';
-
+import RecipeCheckTable from '../components/recipe-check-table';
 class RecipeCheck extends React.Component {
     render() {
         return (
@@ -11,7 +11,7 @@ class RecipeCheck extends React.Component {
                 <Head />
                 <Body>
                     <Header />
-                    
+                    <RecipeCheckTable />
                     <Menu />
                 </Body>
             </React.Fragment>
