@@ -1,6 +1,6 @@
 import React from 'react';
 
-class TagCard extends React.Component {
+class TagThumb extends React.Component {
     render() {
         return (
             <div className="tag-card">
@@ -13,4 +13,4 @@ class TagCard extends React.Component {
     }
 }
 
-export default TagCard;
+export default TagThumb;

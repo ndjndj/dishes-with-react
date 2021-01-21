@@ -1,5 +1,5 @@
 import React from 'react';
-import TagCard from '../components/tag-card';
+import TagCard from './tag-thumb';
 class TagTable extends React.Component {
     render() {
         return (

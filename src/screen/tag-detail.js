@@ -4,7 +4,7 @@ import Body from '../components/body';
 import Menu from '../components/menu';
 import Header from '../components/header';
 import Button from '../components/button';
-import TagCard from '../components/tag-card';
+import TagCard from '../components/tag-thumb';
 
 class TagDetail extends React.Component {
     render() {
