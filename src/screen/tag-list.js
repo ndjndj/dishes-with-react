@@ -3,7 +3,7 @@ import Head from '../components/head';
 import Body from '../components/body';
 import Menu from '../components/menu';
 import Header from '../components/header';
-import TagDetailAtom from '../components/tag-detail-atom';
+import TagTable from '../components/tag-table';
 
 class TagDetail extends React.Component {
     render () {
@@ -12,7 +12,7 @@ class TagDetail extends React.Component {
                 <Head />
                 <Body>
                     <Header />
-                    <TagDetailAtom />
+                    <TagTable />
                 </Body>
                 <Menu />
             </React.Fragment>
