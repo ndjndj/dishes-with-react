@@ -5,7 +5,7 @@ import Menu from '../components/menu';
 import Header from '../components/header';
 import TagTable from '../components/tag-table';
 
-class TagDetail extends React.Component {
+class TagList extends React.Component {
     render () {
         return(
             <React.Fragment>
@@ -20,4 +20,4 @@ class TagDetail extends React.Component {
     }
 }
 
-export default TagDetail;
+export default TagList;
