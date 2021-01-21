@@ -4,7 +4,7 @@ import Body from '../components/body';
 import Menu from '../components/menu';
 import Header from '../components/header';
 import Button from '../components/button';
-import TagTable from '../components/tag-table';
+import TagCard from '../components/tag-card';
 
 class TagDetail extends React.Component {
     render() {
@@ -14,7 +14,7 @@ class TagDetail extends React.Component {
                 <Body>
                     <Header />
                         <Button desc="Edit" className="edit" />
-                        <TagTable />
+                        <TagCard />
                     <Menu />
                 </Body>
             </React.Fragment>
