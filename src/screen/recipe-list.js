@@ -7,13 +7,11 @@ class RecipeList extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Body>
-                    <Header />
-                    <main>
-                        <RecipeCardTable />
-                    </main>
-                    <Menu />
-                </Body>
+                <Header />
+                <main>
+                    <RecipeCardTable />
+                </main>
+                <Menu />
             </React.Fragment>
         );
     }
