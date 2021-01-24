@@ -1,0 +1,13 @@
+.menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #b6d8ee;
+    z-index: 999;
+    display: flex;
+}
+
+.menu .btn {
+    width: 14%;
+    margin: 2%;
+}
