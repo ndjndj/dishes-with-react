@@ -1,6 +1,6 @@
 import React from 'react';
 import RecipeStep from '../components/recipe-step'
-import Button from 'button';
+import Button from '../components/button';
 class RecipeTable extends React.Component {
     render() {
         return (
@@ -8,7 +8,7 @@ class RecipeTable extends React.Component {
                 <div className="recipe-step-table">
                     <RecipeStep />
                 </div>
-                <Button desc="+"/>
+                <Button link="" desc="+" component={""} />
             </React.Fragment>
 
         );
