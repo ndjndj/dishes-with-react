@@ -8,7 +8,7 @@ class RecipeTable extends React.Component {
                 <div className="recipe-step-table">
                     <RecipeStep />
                 </div>
-                <Button link="" desc="+" component={""} />
+                <Button desc="+" />
             </React.Fragment>
 
         );
