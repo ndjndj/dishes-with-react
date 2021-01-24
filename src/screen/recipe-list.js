@@ -1,5 +1,4 @@
 import React from 'react';
-import Body from '../components/body';
 import Menu from '../components/menu';
 import Header from '../components/header';
 import RecipeCardTable from '../components/recipe-card-table';
