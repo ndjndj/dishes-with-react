@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 class Button extends React.Component {
     render() {
         const btnDesc = this.props.desc;
+        const link = this.props.link;
         return (
-            <div className="btn">
+            <Link to={link} className="btn">
                 {btnDesc}
-            </div>
+            </Link>
         );
     }
 }
