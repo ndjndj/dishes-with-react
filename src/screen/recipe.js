@@ -1,6 +1,4 @@
 import React from 'react';
-import Head from '../components/head';
-import Body from '../components/body';
 import Menu from '../components/menu';
 import Header from '../components/header';
 import RecipeMaterial from '../components/recipe-material';
@@ -10,15 +8,12 @@ class Recipe extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Head title="recipe"/>
-                <Body>
-                    <Header />
-                    <main>
-                        <RecipeMaterial />
-                        <RecipeTable />
-                    </main>
-                    <Menu />
-                </Body>
+                <Header />
+                <main>
+                    <RecipeMaterial />
+                    <RecipeTable />
+                </main>
+                <Menu />
             </React.Fragment>
 
         );
