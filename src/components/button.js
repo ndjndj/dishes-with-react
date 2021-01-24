@@ -5,7 +5,7 @@ class Button extends React.Component {
     render() {
         const btnDesc = this.props.desc;
         const link = this.props.link;
-        const component = this.props.component
+        const component = this.props.component;
         return (
             <Router>
                 <Link to={link} className="btn">
