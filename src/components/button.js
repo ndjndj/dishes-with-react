@@ -11,7 +11,7 @@ class Button extends React.Component {
                 <Link to={link} className="btn">
                     {btnDesc}
                 </Link>
-                <Route exact path={link} component={component}/>
+                <Route path={link} exact component={component}/>
             </Router>
         );
     }
