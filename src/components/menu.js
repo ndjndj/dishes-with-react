@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './button';
 import '../styles/menu.css';
-import RecipeChek from '../screen/recipe';
+import RecipeCheck from '../screen/recipe';
 class Menu extends React.Component {
     render() {
         return (
