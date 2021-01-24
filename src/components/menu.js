@@ -5,11 +5,11 @@ class Menu extends React.Component {
     render() {
         return (
             <div className = "menu">
-                <Button desc="recipe"  />
-                <Button desc="tag" />
-                <Button desc="+" />
-                <Button desc="calender" />
-                <Button desc="config" />
+                <Button link="recipe" desc="recipe"  />
+                <Button link="tag" desc="tag" />
+                <Button link="add" desc="+" />
+                <Button link="calender" desc="calender" />
+                <Button link="config" desc="config" />
             </div>
         );
     }
