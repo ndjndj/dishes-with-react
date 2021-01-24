@@ -10,8 +10,8 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <RecipeList />
         <Router>
+          <RecipeList />
           <Route exact path="/" component={RecipeList}/>
           <Route exact path="/tag" component={TagList}/>
           <Route exact path="/recipe" component={Recipe}/>
