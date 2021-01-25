@@ -13,11 +13,11 @@ class App extends React.Component {
         <Router>
           <RecipeList />
           <Switch>
-            <Route exact path="/tag" component={TagList}/>
-            <Route exact path="/recipe" component={Recipe}/>
-            <Route exact path="/calender" component={Calender}/>
-            <Route exact path="/config" component={Config}/>
-            <Route exact path="/" component={RecipeList}/>
+            <Route path="/tag" component={TagList}/>
+            <Route path="/recipe" component={Recipe}/>
+            <Route path="/calender" component={Calender}/>
+            <Route path="/config" component={Config}/>
+            <Route path="/" component={RecipeList}/>
           </Switch>
         </Router>
       </React.Fragment>
