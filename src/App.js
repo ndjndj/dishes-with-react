@@ -11,7 +11,6 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Router>
-          <RecipeList />
           <Switch>
             <Route path="/tag" component={TagList}/>
             <Route path="/recipe" component={Recipe}/>
