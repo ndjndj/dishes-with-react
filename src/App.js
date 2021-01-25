@@ -4,7 +4,7 @@ import TagList from './screen/tag-list';
 import Recipe from './screen/recipe';
 import Calender from './screen/calender';
 import Config from './screen/config';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
 class App extends React.Component {
   render() {
@@ -12,11 +12,13 @@ class App extends React.Component {
       <React.Fragment>
         <Router>
           <RecipeList />
-          <Route exact path="/" component={RecipeList}/>
-          <Route exact path="/tag" component={TagList}/>
-          <Route exact path="/recipe" component={Recipe}/>
-          <Route exact path="/calender" component={Calender}/>
-          <Route exact path="/config" component={Config}/>
+          <Switch>
+            <Route exact path="/tag" component={TagList}/>
+            <Route exact path="/recipe" component={Recipe}/>
+            <Route exact path="/calender" component={Calender}/>
+            <Route exact path="/config" component={Config}/>
+            <Route exact path="/" component={RecipeList}/>
+          </Switch>
         </Router>
       </React.Fragment>
 
