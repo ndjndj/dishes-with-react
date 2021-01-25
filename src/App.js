@@ -13,9 +13,9 @@ class App extends React.Component {
         <Router>
           <Switch>
             <Route path="/tag" component={TagList}/>
-            <Route path="/recipe" component={Recipe}/>
             <Route path="/calender" component={Calender}/>
             <Route path="/config" component={Config}/>
+            <Route path="/add" component={Recipe}/>
             <Route path="/" component={RecipeList}/>
           </Switch>
         </Router>
