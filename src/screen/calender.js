@@ -1,10 +1,14 @@
 import React from 'react';
+import Menu from '../components/menu';
 class Calender extends React.Component {
     render() {
         return (
-            <div className = "calender">
-                this component is Calender.
-            </div>
+            <React.Fragment>
+                <div className = "calender">
+                    this component is Calender.
+                </div>
+                <Menu />
+            </React.Fragment>
         );
     }
 }
