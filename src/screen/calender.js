@@ -4,15 +4,22 @@ class Calender extends React.Component {
     render() {
         const createCalender = (ymd) => {
             // get month
+            let today = new Date();
+            let year = today.getFullYear();
+            let month = today.getMonth();
+            let daysCount = new Date(year, month, 0);
             // create array with this month
-            return;
+            return <div>{daysCount}</div>;
         }
 
+        const ymd = new Date();
 
         return (
             <React.Fragment>
                 <div className = "calender">
-                    this component is Calender.
+                    {
+                        createCalender(ymd)
+                    }
                 </div>
                 <Menu />
             </React.Fragment>
