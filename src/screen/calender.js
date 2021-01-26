@@ -1,5 +1,6 @@
 import React from 'react';
 import Menu from '../components/menu';
+import Header from '../compoents/header';
 class Calender extends React.Component {
     render() {
         const createArrDays = (ymd) => {
@@ -31,6 +32,7 @@ class Calender extends React.Component {
 
         return (
             <React.Fragment>
+                <Header />
                 <div className = "calender">
                     {
                         createCalender(ymd)
