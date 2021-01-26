@@ -9,6 +9,11 @@ class Calender extends React.Component {
             let arrDays = [...Array(daysCount).keys()].map((_, i) => ++i);
             return arrDays;
         }
+
+        const calcWeekNumber = (day) => {
+            return;
+        }
+
         const createCalender = (ymd) => {
             const arrDays = createArrDays(ymd);
             const jsx = arrDays.map((v) =>{return<div className="day">{v}</div>});
