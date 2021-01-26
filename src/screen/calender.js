@@ -21,7 +21,7 @@ class Calender extends React.Component {
 
         const createCalender = (ymd) => {
             const arrDays = createArrDays(ymd);
-            const jsx = arrDays.map((v) =>{return<div className={"day " + calcWeekNumber(v)}>{v}</div>});
+            const jsx = arrDays.map((v) =>{return<div className={"day " + calcWeekNumber(v)}>{v.getDate()}</div>});
             return jsx;
         }
 
