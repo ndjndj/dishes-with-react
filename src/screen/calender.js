@@ -4,10 +4,7 @@ class Calender extends React.Component {
     render() {
         const createCalender = (ymd) => {
             // get month
-            let today = new Date();
-            let year = today.getFullYear();
-            let month = today.getMonth();
-            let daysCount = new Date(year, month, 0).getDate();
+            let daysCount = new Date(ymd.getFullYear(), ymd.getMonth(), 0).getDate();
             // create array with this month
             return <div>{daysCount}</div>;
         }
