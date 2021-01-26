@@ -3,9 +3,13 @@ import Menu from '../components/menu';
 class Calender extends React.Component {
     render() {
         const createCalender = (ymd) => {
-            // get month
+            // 月の日数を取得
             let daysCount = new Date(ymd.getFullYear(), ymd.getMonth(), 0).getDate();
-            // create array with this month
+            // 1日から月末日の配列を生成
+            let arrDays = [...Array(daysCount).keys()].map((_, i) => ++i);
+            console.log(arrDays);
+
+
             return <div>{daysCount}</div>;
         }
 
