@@ -14,8 +14,8 @@ class Calender extends React.Component {
             return arrDays;
         }
 
-        const calcWeekNumber = (day) => {
-            let weekNumber = day % 7 == 0 ? day / 7 : day % 7;
+        const calcWeekNumber = (ymd) => {
+            let weekNumber = Math.floor((ymd.getDate() - ymd.getDay() + 12) / 7);
             return weekNumber;
         }
 
