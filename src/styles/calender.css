@@ -1,0 +1,6 @@
+.day {
+    border: 1px solid #CCCCCC;
+    display: flex;
+    width: 10%;
+    height: 10%;
+}
