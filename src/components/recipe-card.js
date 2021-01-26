@@ -3,7 +3,7 @@ import React from 'react';
 class RecipeCard extends React.Component {
     render() {
         return (
-            <div classNmae="wrapper">
+            <div className="wrapper">
                 <div className="img">img</div>
                 <div className="desc">
                     <div className="recipe title">recipe title</div>
