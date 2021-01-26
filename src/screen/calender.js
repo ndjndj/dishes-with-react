@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from '../components/menu';
 import Header from '../components/header';
+import '../styles/calender.css';
 class Calender extends React.Component {
     render() {
         const createArrDays = (ymd) => {
