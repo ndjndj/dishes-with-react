@@ -5,10 +5,20 @@ class Button extends React.Component {
     render() {
         const btnDesc = this.props.desc;
         const link = this.props.link;
+        let jsx;
+        
+        if (link === undefined) {
+            jsx = <div className="btn">{btnDesc}</div>
+        } else {
+            jsx = <Link to={link} className="btn">{btnDesc}</Link>
+        }
+
+
         return (
-            <Link to={link} className="btn">
-                {btnDesc}
-            </Link>
+            <React.Fragment>
+                {jsx}
+            </React.Fragment>
+
         );
     }
 }
