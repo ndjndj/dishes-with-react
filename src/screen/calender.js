@@ -49,30 +49,20 @@ class Calender extends React.Component {
             const arrDays = createArrDays(ymd);
 
             // カレンダー形式の二次元配列に変換
-            let arrCalender =[];
-            let arrWeek = [];
-            let day;
-            let weekNumber;
-            let preWeekNumber = 1;
-            for (var i = 0; i < arrDays.length; i++ ) {
-                day = arrDays[i];
-                weekNumber = calcWeekNumber(day);
-
-                arrWeek = weekNumber === preWeekNumber ? arrWeek : [];
-
-                arrWeek.push(day);
-
-                if (weekNumber !== preWeekNumber) {
-                    arrCalender.push(arrWeek);
-                }
-
-                preWeekNumber = Number(weekNumber);
-            }
-
+            const arrCalender = createCalenderArray(arrDays);
             //JSXを作成
-            const jsx = arrDays.map(
-                (v) =>{return<div className={"day " + `week${calcWeekNumber(v)}`} key={v}>{v.getDate()}</div>}
+            const jsx = arrCalender.map(
+                (week, i) => {
+                    return <div className={"week " + `week${String(i+1)}`} key={i}>
+                        {week.map(
+                            (day, j) => {
+                                return <div className="day" key={j}>{day.getDate()}</div>
+                            }
+                        )}
+                    </div>
+                }
             );
+
             return jsx;
         }
 
