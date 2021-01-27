@@ -22,8 +22,23 @@ class Calender extends React.Component {
             return weekNumber;
         }
 
-        const createCalenderArray = () => {
-            return;
+        const createCalenderArray = (arrDays) => {
+            let arrCalender = [];
+            let arrWeek = [];
+            let weekNumber;
+            let nextWeekNumber = 1;
+
+            arrDays.forEach((day, i) => {
+                weekNumber = calcWeekNumber(day);
+                nextWeekNumber = arrDays.length === i+1 ? -1 : calcWeekNumber(arrDays[i+1]);
+                arrWeek = weekNumber === nextWeekNumber ? arrWeek : [];
+                arrWeek.push(day);
+                if(weekNumber !== nextWeekNumber || arrDays.length === i+1) {
+                    arrCalender.push(arrWeek);
+                }
+            });
+
+            return arrCalender;
         }
 
         const createCalender = (ymd) => {
