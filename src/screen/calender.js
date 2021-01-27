@@ -17,12 +17,15 @@ class Calender extends React.Component {
         }
 
         const calcWeekNumber = (ymd) => {
+            //週番号に変換
             let weekNumber = Math.floor((ymd.getDate() - ymd.getDay() + 12) / 7);
             return weekNumber;
         }
 
         const createCalender = (ymd) => {
+            //日付の配列を取得
             const arrDays = createArrDays(ymd);
+            //JSXを作成
             const jsx = arrDays.map(
                 (v) =>{return<div className={"day " + `week${calcWeekNumber(v)}`} key={v}>{v.getDate()}</div>}
             );
