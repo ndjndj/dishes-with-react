@@ -32,16 +32,13 @@ class Calender extends React.Component {
                 // 現在の週番号と次のインデックスの週番号を取得
                 weekNumber = calcWeekNumber(day);
                 nextWeekNumber = arrDays.length === i+1 ? -1 : calcWeekNumber(arrDays[i+1]);
-
                 // 同じ週番号の配列を作成
-
                 arrWeek.push(day);
                 // カレンダー配列に週番号の配列を追加
                 if(weekNumber !== nextWeekNumber || arrDays.length === i+1) {
                     arrCalender.push(arrWeek);
-
+                    arrWeek = [];
                 }
-                arrWeek = weekNumber === nextWeekNumber ? arrWeek : [];
             });
 
             return arrCalender;
