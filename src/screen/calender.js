@@ -22,9 +22,35 @@ class Calender extends React.Component {
             return weekNumber;
         }
 
+        const createCalenderArray = () => {
+            return;
+        }
+
         const createCalender = (ymd) => {
             //日付の配列を取得
             const arrDays = createArrDays(ymd);
+
+            // カレンダー形式の二次元配列に変換
+            let arrCalender =[];
+            let arrWeek = [];
+            let day;
+            let weekNumber;
+            let preWeekNumber = 1;
+            for (var i = 0; i < arrDays.length; i++ ) {
+                day = arrDays[i];
+                weekNumber = calcWeekNumber(day);
+
+                arrWeek = weekNumber === preWeekNumber ? arrWeek : [];
+
+                arrWeek.push(day);
+
+                if (weekNumber !== preWeekNumber) {
+                    arrCalender.push(arrWeek);
+                }
+
+                preWeekNumber = Number(weekNumber);
+            }
+
             //JSXを作成
             const jsx = arrDays.map(
                 (v) =>{return<div className={"day " + `week${calcWeekNumber(v)}`} key={v}>{v.getDate()}</div>}
