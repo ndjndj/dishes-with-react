@@ -19,7 +19,6 @@ class RecipeMaterial extends React.Component {
                         key={String(matNumIndex)}
                     />])
         });
-        console.log(this.state.materialNumber);
     }
     render() {
         return(
