@@ -5,10 +5,11 @@ class Button extends React.Component {
     render() {
         const btnDesc = this.props.desc;
         const link = this.props.link;
+        const handleClick = this.props.onClick;
         let jsx;
-        
+
         if (link === undefined) {
-            jsx = <div className="btn">{btnDesc}</div>
+            jsx = <div onClick={handleClick} className="btn">{btnDesc}</div>
         } else {
             jsx = <Link to={link} className="btn">{btnDesc}</Link>
         }
