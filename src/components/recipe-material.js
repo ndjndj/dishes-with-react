@@ -4,7 +4,9 @@ import RecipeMaterialAtom from '../components/recipe-material-atom';
 class RecipeMaterial extends React.Component {
     constructor(props) {
         super(props);
-        
+        this.state = {
+            materialNumber: [],
+        }
     }
     handleClick() {
         return;
