@@ -1,3 +1,11 @@
 .config {
     margin: 8%;
 }
+
+.config-link {
+    margin-bottom: 8%;
+    border: 1px solid #CCCCCC;
+    text-align: center;
+    border-radius: 15px;
+    height: 1.5rem;
+}
