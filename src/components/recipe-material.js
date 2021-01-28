@@ -2,10 +2,10 @@ import React from 'react';
 import Button from '../components/button';
 import RecipeMaterialAtom from '../components/recipe-material-atom';
 class RecipeMaterial extends React.Component {
+    handleClick() {
+        return;
+    }
     render() {
-        handleClick() {
-            
-        }
         return(
             <div className="materials">
                 <h2>Materials</h2>
