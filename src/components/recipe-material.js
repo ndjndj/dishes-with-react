@@ -2,6 +2,10 @@ import React from 'react';
 import Button from '../components/button';
 import RecipeMaterialAtom from '../components/recipe-material-atom';
 class RecipeMaterial extends React.Component {
+    constructor(props) {
+        super(props);
+        
+    }
     handleClick() {
         return;
     }
