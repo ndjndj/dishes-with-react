@@ -19,15 +19,16 @@ class RecipeMaterial extends React.Component {
                         key={String(matNumIndex)}
                     />])
         });
+        console.log(this.state.materialNumber);
     }
     render() {
         return(
             <div className="materials">
                 <h2>Materials</h2>
                 <div className="material">
-                    <RecipeMaterialAtom num="1" />
+                    {this.state.materialNumber}
                 </div>
-                <Button desc="+" />
+                <Button desc="+" onClick={this.handleClick} />
             </div>
         );
     }
