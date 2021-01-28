@@ -6,8 +6,12 @@ class Config extends React.Component {
         return (
             <React.Fragment>
                 <Header />
-                <div className = "config">
-                    this component is Config.
+                <div className="config">
+                    <div className="config-link">config1</div>
+                    <div className="config-link">config2</div>
+                    <div className="config-link">config3</div>
+                    <div className="config-link">config4</div>
+                    <div className="config-link">config5</div>
                 </div>
                 <Menu />
             </React.Fragment>
