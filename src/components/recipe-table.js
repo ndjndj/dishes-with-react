@@ -23,9 +23,9 @@ class RecipeTable extends React.Component {
         return (
             <React.Fragment>
                 <div className="recipe-step-table">
-                    <RecipeStep />
+                    {this.state.stepNumber}
                 </div>
-                <Button desc="+" />
+                <Button desc="+" onClick={this.handleClick} />
             </React.Fragment>
 
         );
