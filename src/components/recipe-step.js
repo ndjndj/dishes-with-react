@@ -6,11 +6,7 @@ class RecipeStep extends React.Component {
             <div className="step">
                 <div className="material-unit"><input type="text" /></div>
                 <div className="step-desc">
-                    <textarea>
-                        samplesamplesamplesamplesamplesamplesamplesample
-                        samplesamplesamplesamplesamplesamplesamplesample
-                        samplesamplesamplesamplesamplesamplesamplesample
-                    </textarea>
+                    <textarea />
                 </div>
             </div>
         );
