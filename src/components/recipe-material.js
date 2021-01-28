@@ -9,7 +9,16 @@ class RecipeMaterial extends React.Component {
         }
     }
     handleClick() {
-        return;
+        const matNum = this.state.materialNumber;
+        const matNumIndex = matNum.length + 1;
+        this.setState({
+            materialNumber:
+                matNum.concat([
+                    <RecipeMaterialAtom
+                        num={String(matNumIndex)}
+                        key={String(matNumIndex)}
+                    />])
+        });
     }
     render() {
         return(
