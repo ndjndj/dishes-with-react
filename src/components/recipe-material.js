@@ -3,6 +3,9 @@ import Button from '../components/button';
 import RecipeMaterialAtom from '../components/recipe-material-atom';
 class RecipeMaterial extends React.Component {
     render() {
+        handleClick() {
+            
+        }
         return(
             <div className="materials">
                 <h2>Materials</h2>
