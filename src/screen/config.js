@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from '../components/menu';
 import Header from '../components/header';
+import '../styles/config.css';
 class Config extends React.Component {
     render() {
         return (
