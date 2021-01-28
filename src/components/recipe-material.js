@@ -8,8 +8,9 @@ class RecipeMaterial extends React.Component {
             materialNumber: [],
         }
     }
-    handleClick() {
+    handleClick = (e) => {
         const matNum = this.state.materialNumber;
+        console.log(matNum);
         const matNumIndex = matNum.length + 1;
         this.setState({
             materialNumber:
