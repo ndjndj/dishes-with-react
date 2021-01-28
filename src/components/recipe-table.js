@@ -8,6 +8,17 @@ class RecipeTable extends React.Component {
             stepNumber: [],
         }
     }
+
+    handleClick = (e) => {
+        const step = this.state.stepNumber;
+        const stepNum = this.state.stepNumber.length + 1;
+        this.setState({
+            stepNumber: step.concat([
+                <RecipeStep key={String(stepNum)} />
+            ])
+        })
+    }
+
     render() {
         return (
             <React.Fragment>
