@@ -9,7 +9,6 @@ class ConfirmRecipe extends React.Component {
                 <Header />
                 <Menu />
             </React.Fragment>
-
         );
     }
 }
