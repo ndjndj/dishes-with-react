@@ -4,10 +4,10 @@ import CheckRecipeStep from '../components/check-recipe-step';
 class RecipeCheckTable extends React.Component {
     render() {
         return (
-            <React.Component>
+            <React.Fragment>
                 <CheckRecipeMaterial />
                 <CheckRecipeStep />
-            <React.Component />
+            </React.Fragment>
         );
     }
 }
