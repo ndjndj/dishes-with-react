@@ -7,7 +7,7 @@ class RecipeCheckTable extends React.Component {
             <React.Component>
                 <CheckRecipeMaterial />
                 <CheckRecipeStep />
-            </React.Component>
+            <React.Component />
         );
     }
 }
