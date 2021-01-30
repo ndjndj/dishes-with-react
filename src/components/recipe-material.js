@@ -5,12 +5,13 @@ class RecipeMaterial extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            materialNumber: [],
+            materialNumber: [
+                <RecipeMaterialAtom num="1" key="1" />
+            ],
         }
     }
     handleClick = (e) => {
         const matNum = this.state.materialNumber;
-        console.log(matNum);
         const matNumIndex = matNum.length + 1;
         this.setState({
             materialNumber:
