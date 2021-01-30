@@ -10,7 +10,7 @@ class ConfirmRecipe extends React.Component {
             <React.Fragment>
                 <Header />
                 <RecipeCheckTable />
-                <Button desc="registration" className="edit" />
+                <Button desc="registration" />
                 <Menu />
             </React.Fragment>
         );
