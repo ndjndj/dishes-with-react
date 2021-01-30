@@ -4,7 +4,7 @@ import TagList from './screen/tag-list';
 import Recipe from './screen/recipe';
 import Calender from './screen/calender';
 import Config from './screen/config';
-import RecipeCheck from './screen/recipe-check';
+import ConfirmRecipe from './screen/confirm-recipe';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
 class App extends React.Component {
@@ -17,7 +17,7 @@ class App extends React.Component {
             <Route path="/calender" component={Calender}/>
             <Route path="/config" component={Config}/>
             <Route path="/add" component={Recipe}/>
-            <Route path="/recipe-check" component={RecipeCheck} />
+            <Route path="/confirm-recipe" component={ConfirmRecipe} />
             <Route path="/" component={RecipeList}/>
           </Switch>
         </Router>
