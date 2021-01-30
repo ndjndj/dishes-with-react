@@ -12,7 +12,7 @@ class Recipe extends React.Component {
                 <main>
                     <RecipeMaterial />
                     <RecipeTable />
-                    <Button desc="Done" />
+                    <Button link="recipe-check" desc="Done" />
                 </main>
                 <Menu />
             </React.Fragment>
