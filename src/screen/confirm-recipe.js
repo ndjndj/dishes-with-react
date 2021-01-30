@@ -9,8 +9,8 @@ class ConfirmRecipe extends React.Component {
         return (
             <React.Fragment>
                 <Header />
-                <Button desc="Edit" className="edit" />
                 <RecipeCheckTable />
+                <Button desc="register" className="edit" />
                 <Menu />
             </React.Fragment>
         );
