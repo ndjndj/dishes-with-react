@@ -6,9 +6,9 @@ class TagCard extends React.Component {
             <div className="wrapper">
                 <div className="img">img</div>
                 <div className="desc">
-                    <div class="title">tag title</div>
-                    <div class="under">
-                        <div class="category">rate</div>
+                    <div className="title">tag title</div>
+                    <div className="under">
+                        <div className="category">rate</div>
                     </div>
                 </div>
             </div>
