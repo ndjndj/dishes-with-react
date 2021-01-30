@@ -8,7 +8,7 @@ class RecipeCardTable extends React.Component {
                 <div className="recipe-card-table">
                     <RecipeCard />
                 </div>
-                <Button desc="+" />
+                <Button desc="+" link="add" />
             </React.Fragment>
         );
     }
